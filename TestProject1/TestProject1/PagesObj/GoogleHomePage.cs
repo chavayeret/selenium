@@ -31,4 +31,3 @@ namespace TestProject1.PagesObj
             SearchBox.Submit();
         }
     }
-}

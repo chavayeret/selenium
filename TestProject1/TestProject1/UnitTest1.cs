@@ -13,17 +13,17 @@ namespace TestProject1
         private IWebDriver driver;
         private GoogleHomePage googleHomePage;
         private GoogleResultsPage googleResultsPage;
-        public static IEnumerable<TestData> TestCases => XmlDataReader.ReadTestData("T:\\пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\\пїЅпїЅпїЅ пїЅ\\пїЅпїЅпїЅпїЅпїЅ пїЅ\\пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\\пїЅпїЅпїЅпїЅпїЅ4\\SeleniumProject\\SeleniumProject\\TestData.xml");
+        public static IEnumerable<TestData> TestCases => XmlDataReader.ReadTestData("T:\\дргсъ ъелрд\\щрд б\\чбецд б\\чешс аеиеоцйд\\щйтеш4\\SeleniumProject\\SeleniumProject\\TestData.xml");
 
 
         [OneTimeSetUp]
         public void SetUp()
         {
-            string path = "T:\\пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\\пїЅпїЅпїЅ пїЅ\\пїЅпїЅпїЅпїЅпїЅ пїЅ\\пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\\пїЅпїЅпїЅпїЅпїЅ4\\SeleniumProject\\SeleniumProject";
+            string path = "T:\\дргсъ ъелрд\\щрд б\\чбецд б\\чешс аеиеоцйд\\щйтеш4\\SeleniumProject\\SeleniumProject";
 
-        //Creates the ChomeDriver object, Executes tests on Google Chrome
+            //Creates the ChomeDriver object, Executes tests on Google Chrome
 
-            driver = new ChromeDriver(path + @"\drivers\");
+            driver = new ChromeDriver(path + @"\drivers\");
             googleHomePage = new GoogleHomePage(driver);
             googleResultsPage = new GoogleResultsPage(driver);
         }
